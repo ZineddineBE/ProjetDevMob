@@ -1,0 +1,75 @@
+<ion-header [translucent]="false">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Mon profil</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <form>
+        <ion-grid>
+            <ion-row color="primary" justify-content-center>
+                <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                    <div>
+
+                        <ion-item lines="none">
+                            <ion-label position="floating" for="nom">Nom</ion-label>
+                            <ion-input type="text" name="nom" readonly="true" value="Hisler"></ion-input>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                            <ion-label position="floating" for="prenom">Prénom</ion-label>
+                            <ion-input type="text" name="prenom" readonly="true" value="Ludivine"></ion-input>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                            <ion-label position="floating" for="ville">Ville</ion-label>
+                            <ion-input type="text" name="ville" readonly="true" value="METZ"></ion-input>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                            <ion-label position="floating" for="email">Email</ion-label>
+                            <ion-input type="text" name="email" readonly="true"value="admin@admin.com"></ion-input>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                            <ion-label position="floating" for="telephone">Téléphone</ion-label>
+                            <ion-input type="text" name="telephone" readonly="true" value="06 34 03 81 75"></ion-input>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                            <ion-label position="floating" for="typeContrat">Type de contrat</ion-label>
+                            <ion-input type="text" name="typeContrat" readonly="true" value="CDD"></ion-input>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                            <ion-label position="floating" for="emploiRecherche">Emploi recherché</ion-label>
+                            <ion-input type="text" name="emploiRecherche" readonly="true" value="Développeur web"></ion-input>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                            <ion-label position="floating" for="localisation">Localisation</ion-label>
+                            <ion-input type="text" name="localisation" readonly="true" value="Metz"></ion-input>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                            <ion-label position="floating" for="rayon">Rayon</ion-label>
+                            <ion-input type="text" name="rayon" readonly="true" value="10km"></ion-input>
+                        </ion-item>
+
+                        <ion-item lines="none">
+                            <ion-label position="floating" for="diponibilite">Disponibilité</ion-label>
+                            <ion-input type="text" name="diponibilite" readonly="true" value="Immédiatement"></ion-input>
+                        </ion-item>
+                    </div>
+                    <div>
+                        <ion-button size="default" type="submit" expand="block">ENREGISTRER</ion-button>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </form>
+
+</ion-content>

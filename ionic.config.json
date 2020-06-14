@@ -1,0 +1,7 @@
+{
+  "name": "projet_ifm",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

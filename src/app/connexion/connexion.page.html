@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>connexion</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="connexionForm">
+
+        <ion-item>
+            <ion-label position="floating">Adresse email</ion-label>
+            <ion-input type="text" formControlName="email"></ion-input>
+        </ion-item>
+
+        <div class="error-messages">
+            <ng-container *ngFor="let error of error_messages.email">
+                <div class="error-message" *ngIf="connexionForm.get('email').hasError(error.type) && (connexionForm .get('email').dirty || connexionForm.get('email').touched)">
+                    {{error.message}}
+                </div>
+            </ng-container>
+        </div>
+
+        <ion-item>
+            <ion-label position="floating">Mot de passe</ion-label>
+            <ion-input type="password" formControlName="mdp"></ion-input>
+        </ion-item>
+
+        <div class="error-messages">
+            <ng-container *ngFor="let error of error_messages.mdp">
+                <div class="error-message" *ngIf="connexionForm .get('mdp').hasError(error.type) && (connexionForm .get('mdp').dirty || connexionForm.get('mdp').touched)">
+                    {{error.message}}
+                </div>
+            </ng-container>
+        </div>
+
+        <ion-button [disabled]="!connexionForm .valid" shape="round" color="primary" expand="full" (click)="connexion()">Valider</ion-button>
+
+    </form>
+
+</ion-content>
